@@ -58,6 +58,7 @@
 		"braintree/braintree_php": "Payments with Braintree",
 		"pear/payment_paypal_soap": "Payments with PayPal.",
 		"pear/services_akismet2": "Filter spam from product reviews.",
+		"silverorange/atom_feed": "Froogle product feeds for Google.",
 		"silverorange/blorg": "Product reviews.",
 		"silverorange/deliverance": "Email mailing list support.",
 		"silverorange/nate_go_search": "Product search indexing."
