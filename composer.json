@@ -50,6 +50,9 @@
 		"silverorange/xml_rpc_ajax": "^1.0.12",
 		"silverorange/yui": "^1.0.11"
 	},
+	"require-dev": {
+		"silverorange/turing": ">=0.1.1"
+	},
 	"suggest": {
 		"authorizenet/authorizenet": "Payments with Authorize.net.",
 		"braintree/braintree_php": "Payments with Braintree",
