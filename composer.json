@@ -40,7 +40,7 @@
 		"ext-imagick": "*",
 		"pear/crypt_gpg": "^1.4.2",
 		"pear/text_password": "^1.1.1",
-		"pear/validate_finance_creditcard": "^1.1.1",
+		"pear/validate_finance_creditcard": ">=0.5.2",
 		"pear/numbers_words": ">=0.18.0",
 		"silverorange/admin": "^2.0.23",
 		"silverorange/net_notifier": "^0.4.1",
