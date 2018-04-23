@@ -57,7 +57,7 @@ class StoreExceptionPage extends SiteXhtmlExceptionPage
 			if ($path !== null) {
 				// permanent redirect to the new path
 				$path = $this->app->config->store->path.$path;
-				$this->app->relocate($path, null, null, true);
+				$this->app->relocate($path, null, true);
 			}
 		}
 	}

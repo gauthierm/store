@@ -4,7 +4,7 @@
  * Web application class for a store
  *
  * @package   Store
- * @copyright 2005-2016 silverorange
+ * @copyright 2005-2018 silverorange
  * @license   http://www.gnu.org/copyleft/lesser.html LGPL License 2.1
  */
 abstract class StoreApplication extends SiteWebApplication
@@ -151,33 +151,6 @@ abstract class StoreApplication extends SiteWebApplication
 		parent::addConfigDefinitions($config);
 		$config->addDefinitions(Store::getConfigDefinitions());
 		$config->addDefinitions(Admin::getConfigDefinitions());
-	}
-
-	// }}}
-	// {{{ protected function getSecureSourceList()
-
-	/**
-	 * Gets an array of pages sources that are secure
-	 *
-	 * For store web applications, this list containes all checkout and account
-	 * pages by default.
-	 *
-	 * @return array an array or regular expressions using PREG syntax that
-	 *                match source strings that are secure.
-	 *
-	 * @see SiteApplication::getSecureSourceList()
-	 */
-	protected function getSecureSourceList()
-	{
-		$list = parent::getSecureSourceList();
-		$list[] = '^checkout.*';
-		$list[] = '^account.*';
-		$list[] = sprintf(
-			'^%s.*',
-			$this->config->uri->account_login
-		);
-
-		return $list;
 	}
 
 	// }}}

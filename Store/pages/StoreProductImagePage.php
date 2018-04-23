@@ -68,7 +68,8 @@ class StoreProductImagePage extends StorePage
 
 		$this->layout->data->extra_headers.= sprintf(
 			'<link rel="image_src" href="%s" />',
-			$this->image->getUri('small', $this->app->getBaseHref(false)));
+			$this->image->getUri('small', $this->app->getBaseHref())
+		);
 
 		$this->layout->startCapture('content');
 		$this->display();
